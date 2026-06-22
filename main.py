@@ -489,7 +489,7 @@ class ImageProcessingGUI(QMainWindow):
 
                 ycrcb[:, :, 0] = cv2.equalizeHist(ycrcb[:, :, 0])
 
-            result = cv2.cvtColor(ycrcb, cv2.COLOR_YCrCb2BGR)
+                result = cv2.cvtColor(ycrcb, cv2.COLOR_YCrCb2BGR)
         
         self.processed_image = result
         self.show_image(result, self.processed_label)
